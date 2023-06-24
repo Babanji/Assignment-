@@ -1,0 +1,6 @@
+vow = input("Enter a string : - ")
+count = 0
+for i in range(0,len(vow)):
+    if(vow[i] ==  "a" or vow[i] ==  "e" or  vow[i] ==  "i" or vow[i] ==  "o" or vow[i] ==  "u"):
+        count+=1
+print("there are",count,"vowels in this string")
