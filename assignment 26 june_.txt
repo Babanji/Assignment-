@@ -1,0 +1,90 @@
+1. difference
+
+setbaban = {10,20,30}
+setraju = {30,40,50}
+print(setbaban.difference(setraju))
+print(setraju.difference(setbaban))
+
+2.issuperset
+setAbc = {10,20,30}
+setBcd = {30,40,50}
+setCde = {10,20,30,40,50}
+print(setCde.issuperset(setAbc))
+print(setCde.issuperset(setBcd)
+
+3. isdisjoint
+setAbc = {10,20,30}
+setBcd = {30,40,50}
+setCde = {10,20}
+print(setBcd.isdisjoint(setAbc))
+print(setCde.isdisjoint(setBcd))
+
+
+4. symmetric_difference update
+setAbc = {10,5,20,30}
+setBcd = {30,40,50}
+setCde = {10,20}
+setAbc.symmetric_difference_update(setBcd)
+print(setAbc)
+print(setCde.symmetric_difference(setBcd))
+
+5. print pattern
+# *
+# ** 
+# ***
+# ****
+# ***
+# **
+# *
+row = int(input("Enter a number of row"))
+for i in range(0,row):
+    for j in range(0,i+1):
+        print("*",end="")
+    print("")
+for i in range(0,row):
+    for j in range(0,row-i-1):
+        print("*",end="")
+    print("")
+6. print pattern
+# ******
+# *    *
+# *    *
+# *    *
+# ******
+row = int(input("Enter a number of row"))
+for i in range(0,row):
+    for j in range(0,row):
+        if(i ==row-1 or i == 0 or j==row-1 or j==0):
+            print("*",end="")
+        else:
+             print(" ",end="")
+    print("")
+7. print pattern
+# 1
+# *
+# 2
+# **
+# 3
+# ***
+# 4
+# ****
+row = int(input("Enter a number of row"))
+for i in range(0,row):
+    print(i+1)
+    for j in range(0,i+1):
+        print("*",end="")
+    print("")
+8. print pattern
+# 1*
+# 2****
+# 3*********
+# 4*****************
+row = int(input("Enter a number of row"))
+for i in range(1,row+1):
+    print(i,end="")
+    for j in range(1,(i*i)+1):
+        print("*",end="")
+    print("")
+
+
+
